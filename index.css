@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display";
+  background: url("./images/pattern-background-mobile.svg") no-repeat
+    var(--pale-blue);
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 500px;
+  margin: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.content {
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px 10px 0% 0%;
+}
+
+.content .order {
+  color: var(--dark-blue);
+  text-align: center;
+  margin: 20px;
+}
+
+.content p {
+  color: var(--desaturated-blue);
+  text-align: center;
+  margin: 20px;
+}
+
+.prices {
+  display: flex;
+  background-color: var(--very-pale-blue);
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.prices img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.prices p {
+  margin: 5px;
+}
+
+.prices .plan {
+  color: var(--dark-blue);
+  font-weight: bold;
+}
+
+.prices a {
+  margin-left: auto;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.payment {
+  background-color: var(--bright-blue);
+  color: #fff;
+}
+
+.cancel {
+  background-color: transparent;
+  color: var(--desaturated-blue);
+  margin-top: 20px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+p {
+  font-size: 16;
+}
+
+@media (min-width: 1440px) {
+  body {
+    background: url("./images/pattern-background-desktop.svg") no-repeat
+      var(--pale-blue);
+  }
+  .content {
+    padding: 0 60px;
+  }
+  .content {
+    height: 400px;
+  }
+
+  .content .order {
+    margin-top: 50px;
+  }
+
+  .prices img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .prices p {
+    margin-left: 10px;
+  }
+
+  button {
+    margin-top: 30px;
+  }
+}
+
+/* Avoid fixed sizes */
